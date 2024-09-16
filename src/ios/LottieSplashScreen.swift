@@ -121,7 +121,7 @@ import Lottie
         let backgroundColor = getUIModeDependentPreference(basePreferenceName: "LottieBackgroundColor", defaultValue: "#ffffff")
 
         animationViewContainer?.autoresizingMask = [
-            .flexibleWidth, .flexibleHeight, .flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin
+//            .flexibleWidth, .flexibleHeight, .flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin
         ]
         animationViewContainer?.backgroundColor = UIColor(hex: backgroundColor)
     }
@@ -156,7 +156,7 @@ import Lottie
         if loop {
             animationView?.loopMode = .loop
         }
-        animationView?.contentMode = .scaleAspectFit
+        animationView?.contentMode = .scaleAspectFill
         animationView?.animationSpeed = 1
         animationView?.autoresizesSubviews = true
         animationView?.backgroundBehavior = .pauseAndRestore
